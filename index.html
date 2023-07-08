@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vending Machine</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Vending Machine</h1>
+  
+  <div id="display">Please insert money</div>
+  
+  <div id="items">
+    <button onclick="selectItem(0)">Coke ($1.50)</button>
+    <button onclick="selectItem(1)">Chips ($1.00)</button>
+    <button onclick="selectItem(2)">Candy ($0.75)</button>
+    <button onclick="selectItem(3)">Water ($2.00)</button>
+    <button onclick="selectItem(4)">Cookies ($1.25)</button>
+    <button onclick="selectItem(5)">Juice ($1.75)</button>
+  </div>
+  
+  <div id="actions">
+    <button onclick="insertMoney(0.25)">Add $0.25</button>
+    <button onclick="insertMoney(0.50)">Add $0.50</button>
+    <button onclick="insertMoney(1.00)">Add $1.00</button>
+    <button onclick="cancelSale()">Cancel Sale</button>
+    <button onclick="completePurchase()">Complete Purchase</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
